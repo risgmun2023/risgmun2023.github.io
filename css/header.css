@@ -197,3 +197,18 @@ footer{
 footer span{
     color: var(--primary);
 }
+
+#preloader{
+    background: white url(../assets/img/preloader.gif) no-repeat center center;
+    background-size: 100px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    transition: var(--transition-all);
+}
+
+.disabled{
+    opacity: 0;
+}
