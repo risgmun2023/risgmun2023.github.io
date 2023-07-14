@@ -176,7 +176,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: baseline;
-    gap: 1rem;
 }
 
 .dropdown:hover .dropdown-content,.dropdown:hover .dropdown-content {
