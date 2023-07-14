@@ -32,6 +32,19 @@ body{
     scroll-behavior: smooth;
 }
 
+html{
+    scroll-padding-top: 83px;
+    scroll-snap-type: both mandatory;
+}
+
+footer, section{
+    scroll-snap-align: start;
+}
+
+section{
+    padding: 2rem;
+}
+
 .container{
     width: 100%;
     max-width: 1920px;
@@ -48,11 +61,6 @@ body{
 .section-h2 span{
     color: var(--primary);
 }
-
-section{
-    padding: 2rem;
-}
-
 /* Header */
 header{
     top: 0;
