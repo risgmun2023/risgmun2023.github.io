@@ -1,0 +1,153 @@
+/* Banner */
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 2rem 0;
+    gap: 1rem;
+    min-height: 200px;
+    max-height: 300px;
+    height: calc(100vh - 83px);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../assets/img/enroll-banner.png');
+}
+
+#banner h1{
+    text-align: center;
+    border-radius: 0.5rem;
+    width: fit-content;
+    padding: 0rem 1rem;
+    font-size: 5rem;
+    text-shadow: 0 0 5px black;
+    font-family: 'Poppins';
+    word-wrap: break-word;
+}
+
+#banner .cta-btn{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 1.2rem;
+    background-color: #0d4384;
+    box-shadow: rgba(0, 0, 0, 0.623) 0px 0px 29px 0px;
+}
+
+#banner .cta-btn:hover{
+    background-color: var(--primary-hover);
+}
+
+/* Enroll */
+/* Brochure */
+#enroll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 4rem;
+}
+
+.form-img{
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    height: 190px;
+    padding-right: 2rem;
+}
+
+.form-img h3{
+    color: var(--black-100);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.form-img img{
+    max-width: 220px;
+    width: 220px;
+    transition: var(--transition-all);
+    transition-duration: 300ms;
+    width: 220px;
+    box-shadow: 30px 0 25px 0 rgba(0, 0, 0, 0.2);
+    transform: perspective(50em) translateZ(0) translate(0%, 0%) rotateY(30deg) rotateX(20deg) translateY(0px) translateX(-1.5rem);
+}
+
+.form-img img:hover{
+    transform: translateX(-1.5rem);
+}
+
+.form-img div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-img div a{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    width: fit-content;
+    color: var(--primary);
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.623) 0px 0px 2px 0px;
+    border-radius: 0.6rem;
+    padding: 0.7rem 0.9rem;
+    transition: var(--transition-all);
+}
+
+.form-img div a:hover{
+    background-color: var(--black-100);
+}
+
+footer{
+    margin-top: 5rem;
+}
+
+@media screen and (max-width : 1010px) {
+
+    #enroll{
+        margin-bottom: 0rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .form-img{
+        margin-top: 3.5rem;
+        height: fit-content;
+        flex-direction: column;
+        padding: 2rem;
+        padding-top: 0;
+    }
+
+    .form-img img{
+        width: 100%;
+        transform: perspective(50em) translateZ(0) translate(0%, 0%) rotateY(30deg) rotateX(20deg) translateY(0px) translateY(-50px);
+    }
+    .form-img img:hover{
+        transform: translateY(-50px);
+    }
+
+    .form-img div{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer{
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width : 459px) {
+    #banner{
+        min-height: 400px;
+        max-height: 500px;
+    }
+}

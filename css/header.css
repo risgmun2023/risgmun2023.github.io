@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    font-family: 'Inter';
+    --transition-all: 200ms ease-out all;
+    /* colors */
+    --primary : #0D4284;
+    --primary-hover:hsl(213, 82%, 35%);
+    --black-900 : #0d0d0d;
+    --black-800 : #262626;
+    --black-700 : #404040;
+    --black-600 : #595959;
+    --black-500 : #737373;
+    --black-400 : #8c8c8c;
+    --black-300 : #a6a6a6;
+    --black-200 : #d9d9d9;
+    --black-100 : #f2f2f2;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.section-h2{
+    text-align: center;
+    color: var(--black-900);
+    font-size: 2.5rem;
+    font-family: 'Poppins';
+    word-wrap: break-word;
+}
+
+.section-h2 span{
+    color: var(--primary);
+}
+
+section{
+    padding: 2rem;
+}
+
+/* Header */
+header{
+    top: 0;
+    position: sticky;
+    z-index: 1;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    backdrop-filter: blur(1px);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.logo, .cta{
+    width: 20%;
+    flex-basis: 20%;
+}
+
+.logo,.cta, .logo a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    flex-basis: 60%;
+}
+
+.logo, .logo a{
+    text-decoration: none;
+    gap: 0.2rem;
+}
+
+.logo img{
+    width: 4.4rem;
+    padding: 0.7rem 0.5rem;
+}
+
+.logo span{
+    font-family: 'Poppins';
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.nav-link{
+    text-decoration: none;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.875rem;
+    color: var(--black-600);
+}
+
+.nav-link:hover{
+    color: var(--black-700);
+    transition: var(--transition-all);
+}
+
+.cta-btn{
+    border-radius: 0.6rem;
+    padding: 0.7rem 0.9rem;
+    background-color: var(--primary);
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-weight: 500;
+    transition: var(--transition-all);
+    border: 2px solid var(--primary-hover);
+}
+
+.cta-btn:hover{
+    background-color: var(--primary-hover);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown span{
+    cursor: default;
+    padding: 0.2rem 0.6rem;
+    padding-right: 0;
+}
+
+.fa-caret-right{
+    color: var(--black-900);
+    transition: var(--transition-all);
+}
+
+.dropdown:hover .fa-caret-right{
+    transform: rotateZ(90deg);
+}
+
+.dropdown-content {
+    border-radius: 0.5rem;
+    display: none;
+    position: absolute;
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 0;
+    box-shadow: 0px 2px 0.5rem 0px rgba(0,0,0,0.2);
+    padding: 12px 0.5rem;
+    z-index: 1;
+}
+
+.dropdown-content .nav-link{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.dropdown:hover .dropdown-content,.dropdown:hover .dropdown-content {
+    width: fit-content;
+    display: flex;
+    left: 0;
+    flex-direction: column;
+}
+
+.fa-facebook{
+    color: #4867aa;
+}
+.fa-instagram{
+    color: #d62976;
+}
+
+.mobile-header{
+    display: none;
+}
+
+/* Footer */
+footer{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height : 83px;
+    color: var(--black-900);
+    line-height: 1.5;
+    text-align: center;
+    font-size: 0.875rem;
+    box-shadow: rgba(99, 99, 99, 0.63) 0px 0px 2px 0px;
+}
+
+footer span{
+    color: var(--primary);
+}
