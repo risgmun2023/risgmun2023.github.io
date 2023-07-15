@@ -13,16 +13,16 @@ window.addEventListener('load', ()=>{
 hamBurger.addEventListener('click' , ()=>{
     mobileNav.classList.toggle('enabled');
     if(mobileNav.classList.contains('enabled')){
-        hamBurger.innerHTML = `<i class="fas fa-regular fa-xmark"></i>`;
+        hamBurger.innerHTML = `CLOSE`;
     }
     else{
-        hamBurger.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+        hamBurger.innerHTML = `MENU`;
     }
 })
 
 navLink.forEach((e)=>{
     e.addEventListener('click',()=>{
         mobileNav.classList.toggle('enabled');
-        hamBurger.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+        hamBurger.innerHTML = `MENU`;
     })
 });
