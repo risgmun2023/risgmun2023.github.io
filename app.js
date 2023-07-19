@@ -26,3 +26,12 @@ navLink.forEach((e)=>{
         hamBurger.innerHTML = `MENU`;
     })
 });
+
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        entry.target.classList.toggle('show', entry.isIntersecting);
+    });
+});
+
+const hiddenEl = document.querySelectorAll('.hidden');
+hiddenEl.forEach((el) => observer.observe(el));
